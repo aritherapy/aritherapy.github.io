@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ham26 — sidequests</title>
+<style>
+  :root{
+    --bg:#101014; --card:#1a1a21; --ink:#e8e6df; --dim:#8f8d85; --accent:#e0b23c;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:ui-rounded,'Avenir Next',system-ui,sans-serif;
+    min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  main{max-width:520px; width:100%;}
+  h1{
+    font-size:clamp(34px,8vw,52px); margin:0 0 4px; letter-spacing:-1px;
+  }
+  h1 .num{color:var(--accent);}
+  .tag{color:var(--dim); margin:0 0 36px; font-size:17px;}
+  a.project{
+    display:flex; align-items:center; gap:16px; text-decoration:none; color:var(--ink);
+    background:var(--card); border:1px solid #2a2a33; border-radius:16px;
+    padding:18px 20px; margin-bottom:14px; transition:transform .15s, border-color .15s;
+  }
+  a.project:hover{transform:translateY(-2px); border-color:var(--accent);}
+  .emoji{font-size:34px; flex:none;}
+  .name{font-weight:700; font-size:19px;}
+  .desc{color:var(--dim); font-size:14px; margin-top:3px; line-height:1.45;}
+  .path{color:var(--accent); font-size:13px; font-family:ui-monospace,monospace; margin-top:5px;}
+  footer{color:var(--dim); font-size:13px; margin-top:36px;}
+</style>
+</head>
+<body>
+<main>
+  <h1>ham<span class="num">26</span></h1>
+  <p class="tag">sidequests &amp; pet projects</p>
+
+  <a class="project" href="/codehero/">
+    <span class="emoji">🦸‍♀️</span>
+    <span>
+      <span class="name">Hero Academy</span>
+      <span class="desc" style="display:block;">A voice-guided "how computers work" adventure for a 5-year-old — spoken lessons, picture quizzes, and superhero coding games.</span>
+      <span class="path" style="display:block;">/codehero</span>
+    </span>
+  </a>
+
+  <footer>more sidequests loading…</footer>
+</main>
+</body>
+</html>
